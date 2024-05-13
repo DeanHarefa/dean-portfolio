@@ -1,0 +1,113 @@
+.about__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.about__modal-content{
+    width: 500px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.about__modal-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.about__modal-title, .about__modal-description{
+    text-align: center;
+}
+
+.about__modal-title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+/* .services__modal-description{
+    font-size: var(--small-font-size);
+    padding: 0 3.5rem;
+    margin-bottom: var(--mb-2);
+} */
+
+.about__modal-services{
+    row-gap: 0.75rem;
+}
+
+.about__modal-service{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .5rem;
+    padding-bottom: 1rem;
+    
+}
+
+.border__effect{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); 
+}
+
+.about__modal-icon{
+    color: var(--title-color);
+    /* font-size: 1.1rem; */
+    font-size: 1.5rem;
+}
+
+.about__modal-info{
+    font-size: var(--small-font-size);
+}
+
+
+
+/* Active Modal */
+.active-modal{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Breakpoint */
+/* for large device */
+@media screen and (max-width: 992px) {
+    
+  }
+  
+  
+  @media screen and (max-width: 576px) {
+    .about__modal-content{
+        padding: 4.5rem 1.5rem 2.5rem;
+        
+    }
+    .about__modal-info{
+        font-size: var(--smaller-font-size);
+    }
+
+    .about__modal-icon{
+        font-size: 1rem;
+    }
+
+  }
+  
+  /* for small device */
+  @media screen and (max-width: 350px) {
+    
+
+    
+  }

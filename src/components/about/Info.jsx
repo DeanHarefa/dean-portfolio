@@ -13,7 +13,7 @@ const Info = () => {
             <div className="about__box" onClick={() => toggleTab(1)}>
                 <i class="bx bx-award about__icon"></i>
                 <h3 className="about__title">Experience</h3>
-                <span className="about__subtitle">1 Year Working</span>
+                <span className="about__subtitle"> &gt; 1 Year Working</span>
             </div>
 
             <div className={toggleState === 1 ? "about__modal active-modal" : "about__modal"}>
@@ -38,12 +38,12 @@ const Info = () => {
             <i class="bx bx-briefcase-alt about__icon"></i>
             <h3 className="about__title">Completed</h3>
             <span className="about__subtitle">48 + Projects</span>
-        </div> */}
+             </div> */}
 
             <div className="about__box" onClick={() => toggleTab(2)}>
                 <i class="bx bx-certification about__icon"></i>
                 <h3 className="about__title">Certification</h3>
-                <span className="about__subtitle">5 certification</span>
+                <span className="about__subtitle">6 certification</span>
             </div>
 
               <div className={toggleState === 2 ? "about__modal active-modal" : "about__modal"}>
@@ -53,6 +53,13 @@ const Info = () => {
 
 
                     <ul className='about__modal-services grid'>
+                        <li className='about__modal-service border__effect'>
+                            <p className='about__modal-info'>Quality Assurance Engineer</p>
+                            <a download="" href="https://coding.id/sertifikat/7B9LVZJM" target="_blank" rel="noopener noreferrer">
+                                <i className='uil uil-eye about__modal-icon'></i>
+                            </a>
+                        </li>
+
                         <li className='about__modal-service border__effect'>
                             <p className='about__modal-info'>TOEFL PREPARATION BOOTCAMP</p>
                             <a download="" href="https://drive.google.com/file/d/1kNNZP9hmNYoyadCkWxu47F6Fio8GnHbf/view?usp=sharing" target="_blank" rel="noopener noreferrer">

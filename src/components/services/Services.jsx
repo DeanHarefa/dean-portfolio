@@ -13,64 +13,85 @@ const Services = () => {
             <span className='section__subtitle'>Work history</span>
 
             <div className="services__container container grid">
-                {/* <div className="services__content">
-                <div>
-                    <i className='uil uil-web-grid services__icon'></i>
-                    <h3 className='services__title'>Product <br /> Designer</h3>
-                </div>
-
-                <span className='services__button' onClick={()=>toggleTab(1)}>View More<i className='uil uil-arrow-right services__button-icon'></i></span>
-
-                <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
-                    <div className="services__modal-content">
-                        <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
-                        <h3 className='services__modal-title'>Product Designer</h3>
-                        <p className="services__modal-description">
-                            Service with more than 3 years of experience. Providing quality work to clients and companies. 
-                        </p>
-
-                        <ul className='services__modal-services grid'>
-                            <li className='services__modal-service'>
-                                <i className='uil uil-check-circle services__modal-icon'></i>
-                                <p className='services__modal-info'>
-                                    I develop the user interface.
-                                </p>
-                            </li>
-
-                            <li className='services__modal-service'>
-                                <i className='uil uil-check-circle services__modal-icon'></i>
-                                <p className='services__modal-info'>
-                                    Web page development.
-                                </p>
-                            </li>
-
-                            <li className='services__modal-service'>
-                                <i className='uil uil-check-circle services__modal-icon'></i>
-                                <p className='services__modal-info'>
-                                    I position your company brand.
-                                </p>
-                            </li>
-
-                            <li className='services__modal-service'>
-                                <i className='uil uil-check-circle services__modal-icon'></i>
-                                <p className='services__modal-info'>
-                                    Design and mockups of products for companies.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div> */}
-
-                <div className="services__content">
+            <div className="services__content">
                     <div>
-                        <i className='uil uil-arrow services__icon'></i>
-                        <h3 className='services__title'>Front End <br /> Developer & QC</h3>
+                        <i className='uil uil-bug services__icon'></i>
+                        <h3 className='services__title'>Quality Assurance <br /> Manual Tester</h3>
                     </div>
 
                     <span className='services__button' onClick={() => toggleTab(1)}>View More<i className='uil uil-arrow-right services__button-icon'></i></span>
 
                     <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+                        <div className="services__modal-content">
+                            <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
+                            <h3 className='services__modal-title'>Quality Assurance & Testing</h3>
+                            <p className="services__modal-description">
+                                Bank Mandiri Tbk (JUN 2024 - Now)
+                            </p>
+
+                            <ul className='services__modal-services grid'>
+                                <li className='services__modal-service'>
+                                    <i className='uil uil-check-circle services__modal-icon'></i>
+                                    <p className='services__modal-info'>
+                                        Conducted Website Testing 
+                                    </p>
+                                </li>
+
+                                <li className='services__modal-service'>
+                                    <i className='uil uil-check-circle services__modal-icon'></i>
+                                    <p className='services__modal-info'>
+                                        Created Defect Documentation Using JIRA
+                                    </p>
+                                </li>
+
+                                <li className='services__modal-service'>
+                                    <i className='uil uil-check-circle services__modal-icon'></i>
+                                    <p className='services__modal-info'>
+                                        Developed Test Cases
+                                    </p>
+                                </li>
+
+                                <li className='services__modal-service'>
+                                    <i className='uil uil-check-circle services__modal-icon'></i>
+                                    <p className='services__modal-info'>
+                                        Performed API Testing Using Postman 
+                                    </p>
+                                </li>
+
+                                <li className='services__modal-service'>
+                                    <i className='uil uil-check-circle services__modal-icon'></i>
+                                    <p className='services__modal-info'>
+                                        Monitoring api logs or data using kibana/elastic 
+                                    </p>
+                                </li>
+
+                                <li className='services__modal-service'>
+                                    <i className='uil uil-check-circle services__modal-icon'></i>
+                                    <p className='services__modal-info'>
+                                     Checked Host Using AS400
+                                    </p>
+                                </li>
+
+                                <li className='services__modal-service'>
+                                    <i className='uil uil-check-circle services__modal-icon'></i>
+                                    <p className='services__modal-info'>
+                                    Tested Applications on Branch Delivery System (BDS)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="services__content">
+                    <div>
+                        <i className='uil uil-arrow services__icon'></i>
+                        <h3 className='services__title'>Front End <br /> Developer & QA</h3>
+                    </div>
+
+                    <span className='services__button' onClick={() => toggleTab(2)}>View More<i className='uil uil-arrow-right services__button-icon'></i></span>
+
+                    <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
                         <div className="services__modal-content">
                             <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
                             <h3 className='services__modal-title'>Create and Quality Control Website</h3>
@@ -124,9 +145,9 @@ const Services = () => {
                         <h3 className='services__title'>Project <br /> Leader</h3>
                     </div>
 
-                    <span className='services__button' onClick={() => toggleTab(2)}>View More<i className='uil uil-arrow-right services__button-icon'></i></span>
+                    <span className='services__button' onClick={() => toggleTab(3)}>View More<i className='uil uil-arrow-right services__button-icon'></i></span>
 
-                    <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
+                    <div className={toggleState === 3 ? "services__modal active-modal" : "services__modal"}>
                         <div className="services__modal-content">
                             <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
                             <h3 className='services__modal-title'>Monitoring Project Website</h3>
@@ -181,6 +202,8 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
+
+               
             </div>
         </section>
     )

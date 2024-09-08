@@ -124,3 +124,67 @@
     text-align: justify;
     margin-bottom: var(--mb-0-5);
 }
+
+.services__modal-info2{
+    font-size: var(--small-font-size);
+    text-align: justify;
+    margin-bottom: var(--mb-0-5);
+    margin-top: var(--mb-1);
+}
+/* Nambah Chip */
+  
+
+.button__container {
+    display: flex;
+    flex-direction: column; /* Mengatur tombol secara vertikal */
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Jarak antar tombol lebih besar */
+    margin-top: 20px; /* Menambahkan jarak dengan konten di atasnya */
+}
+
+.work__button, .work__button2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px; /* Menambah padding untuk area klik yang lebih besar */
+    border-radius: 8px; /* Membuat sudut lebih lembut */
+    /* font-size: 16px;  */
+    /* font-weight: 500; */
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi saat hover */
+    width: 220px; /* Ukuran lebar tombol yang konsisten */
+    text-align: center;
+}
+
+.work__button {
+    background-color: #007bff;
+    color: white;
+}
+
+.work__button2 {
+    background-color: #28a745;
+    color: white;
+}
+
+.work__button:hover, .work__button2:hover {
+    transform: scale(1.05); /* Menambah efek hover dengan memperbesar sedikit tombol */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+.work__button-icon, .work__button-icon2 {
+    margin-left: 8px; /* Jarak antara teks dan ikon panah */
+    transition: transform 0.3s ease; /* Efek transisi untuk ikon */
+}
+
+.work__button:hover .work__button-icon,
+.work__button2:hover .work__button-icon2 {
+    transform: translateX(6px); /* Menambahkan animasi gerakan panah ke kanan saat hover */
+}
+
+  
+@media screen and (max-width: 350px) {
+    
+  
+  }

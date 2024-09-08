@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/dean-portfolio/static/css/main.b6ba72ad.css",
-    "main.js": "/dean-portfolio/static/js/main.8b30d5a3.js",
-    "static/js/453.7d6b55b1.chunk.js": "/dean-portfolio/static/js/453.7d6b55b1.chunk.js",
+    "main.css": "/dean-portfolio/static/css/main.ff22993f.css",
+    "main.js": "/dean-portfolio/static/js/main.f89eacdf.js",
+    "static/js/453.4c316e48.chunk.js": "/dean-portfolio/static/js/453.4c316e48.chunk.js",
     "static/media/Dean.png": "/dean-portfolio/static/media/Dean.f0444434c0c401cafb12.png",
     "static/media/Internship Certificate.png": "/dean-portfolio/static/media/Internship Certificate.ce1005004a51eeb86d4e.png",
     "static/media/MusicToGo.png": "/dean-portfolio/static/media/MusicToGo.4373331bd2ebb6d565a7.png",
     "static/media/KenshinImpact.png": "/dean-portfolio/static/media/KenshinImpact.edb918505bfec4c87a74.png",
     "static/media/Fiabci.png": "/dean-portfolio/static/media/Fiabci.47c997e51863e7ecff71.png",
+    "static/media/Coding.id.png": "/dean-portfolio/static/media/Coding.id.f8e7b6ad76afd9124920.png",
     "static/media/CV - Dean Yankris Harefa.pdf": "/dean-portfolio/static/media/CV - Dean Yankris Harefa.30522e0dc3a43f1cdb27.pdf",
     "static/media/SalesDashboard.png": "/dean-portfolio/static/media/SalesDashboard.371dd91e14d5a20cdd75.png",
     "static/media/Unidiox.png": "/dean-portfolio/static/media/Unidiox.936df65e328870b95e97.png",
@@ -16,16 +17,20 @@
     "static/media/Educom.png": "/dean-portfolio/static/media/Educom.81c79a0f4d0a132e02cd.png",
     "static/media/Planner.png": "/dean-portfolio/static/media/Planner.7edfa0b5e3194b1e29e6.png",
     "static/media/testimonial3.png": "/dean-portfolio/static/media/testimonial3.2e18bfe27c6d2e2e9fdc.png",
+    "static/media/CSS Logo.png": "/dean-portfolio/static/media/CSS Logo.a45a40dad8cb7d5c1452.png",
+    "static/media/MUI Logo.png": "/dean-portfolio/static/media/MUI Logo.3c764984dc37a39ec1b8.png",
     "static/media/testimonial2.png": "/dean-portfolio/static/media/testimonial2.39a53f7f092f07f5bceb.png",
+    "static/media/React Logo.png": "/dean-portfolio/static/media/React Logo.e3cc0cf6f054aa03d002.png",
+    "static/media/MySQL Logo.png": "/dean-portfolio/static/media/MySQL Logo.0d24de7e8f46b5426bea.png",
     "static/media/PlannerQc.png": "/dean-portfolio/static/media/PlannerQc.87a6ce44bbd5515e8361.png",
     "static/media/testimonial1.png": "/dean-portfolio/static/media/testimonial1.89079c1d25f2c94ceb89.png",
     "index.html": "/dean-portfolio/index.html",
-    "main.b6ba72ad.css.map": "/dean-portfolio/static/css/main.b6ba72ad.css.map",
-    "main.8b30d5a3.js.map": "/dean-portfolio/static/js/main.8b30d5a3.js.map",
-    "453.7d6b55b1.chunk.js.map": "/dean-portfolio/static/js/453.7d6b55b1.chunk.js.map"
+    "main.ff22993f.css.map": "/dean-portfolio/static/css/main.ff22993f.css.map",
+    "main.f89eacdf.js.map": "/dean-portfolio/static/js/main.f89eacdf.js.map",
+    "453.4c316e48.chunk.js.map": "/dean-portfolio/static/js/453.4c316e48.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6ba72ad.css",
-    "static/js/main.8b30d5a3.js"
+    "static/css/main.ff22993f.css",
+    "static/js/main.f89eacdf.js"
   ]
 }

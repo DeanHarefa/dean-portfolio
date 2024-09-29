@@ -69,56 +69,6 @@
     color: var(--container-color);
 }
 
-/* Breakpoint */
-/* for large device */
-@media screen and (max-width: 992px) {
-    .work__container{
-        gap: 1.25rem;
-    }
-
-    .work__card{
-        padding: 1rem;
-    }
-
-    .work__img{
-        margin-bottom: 0.75rem;
-    }
-
-    .work__title{
-        margin-bottom: 0.25rem;
-    }
-}
-
-/* for medium device */
-@media screen and (max-width: 768px) {
-    .work__container{
-        grid-template-columns: max-content;
-    }
-    
-}
-
-@media screen and (max-width: 576px) {
-    .work__container{
-        grid-template-columns: 1fr;
-    }
-
-    .work__img{
-        width: 100%;
-    }
-}
-
-/* for small device */
-@media screen and (max-width: 350px) {
-    .work__item{
-        font-size: var(--small-font-size);
-    }
-    .work__filters{
-        column-gap: 0.25rem;
-    }
-
-}
-
-
 .services__modal-info{
     font-size: var(--small-font-size);
     text-align: justify;
@@ -131,9 +81,10 @@
     margin-bottom: var(--mb-0-5);
     margin-top: var(--mb-1);
 }
-/* Nambah Chip */
-  
 
+
+
+/* Nambah Chip */
 .button__container {
     display: flex;
     flex-direction: column; /* Mengatur tombol secara vertikal */
@@ -141,6 +92,7 @@
     justify-content: center;
     gap: 15px; /* Jarak antar tombol lebih besar */
     margin-top: 20px; /* Menambahkan jarak dengan konten di atasnya */
+    
 }
 
 .work__button, .work__button2 {
@@ -183,8 +135,277 @@
     transform: translateX(6px); /* Menambahkan animasi gerakan panah ke kanan saat hover */
 }
 
-  
-@media screen and (max-width: 350px) {
-    
-  
+/* Modal Project */
+
+.services__modal-work{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.services__modal-contentx {
+    width: 500px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 3rem;
+    border-radius: 1.5rem;
+    z-index: 1001;
+    overflow-y: auto;
   }
+
+/* Active Modal */
+.active-modal{
+    opacity: 1;
+    visibility: visible;
+}
+
+.Chip {
+    white-space: normal; /* Membuat chip bisa break line jika terlalu panjang */
+    margin-bottom: 8px; /* Memberikan jarak antar chip */
+}
+
+.MuiStack-root {
+    flex-wrap: wrap; /* Membuat chip ke bawah jika tidak muat satu baris */
+    gap: 10px; /* Jarak antar chip */
+}
+
+  
+/* Modal styles for small screens */
+/* for small device */
+/* Modal styles for smaller screens */
+/* Breakpoint */
+/* for large device */
+@media screen and (max-width: 1024px) {
+    .services__modal-contentx {
+        width: 80%;
+        max-height: 60vh; /* Limits modal height */
+        display: flex;
+        flex-direction: column; /* To manage content and button layout */
+        position: relative;
+        transform: translateY(-30%);
+    }
+
+    .services__modal-content {
+        transform: translateY(-30%);
+    }
+
+    /* Content inside modal */
+    .modal__body {
+        flex-grow: 1; /* Allows the body to take up remaining space */
+        overflow-y: auto; /* Enables scrolling of the content inside the modal */
+        padding: 1.5rem; /* Adds padding around content */
+    }
+
+    .button__container {
+        position: sticky; /* Stick the button container to the bottom */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        /* background-color: var(--container-color);
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);  Adds shadow for separation  */
+        z-index: 1001; /* Ensures the buttons stay on top */
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 992px) {
+    .work__container{
+        gap: 1.25rem;
+    }
+
+    .work__card{
+        padding: 1rem;
+    }
+
+    .work__img{
+        margin-bottom: 0.75rem;
+    }
+
+    .work__title{
+        margin-bottom: 0.25rem;
+    }
+
+    .services__modal-contentx {
+        transform: translateY(-20%);
+    }
+}
+
+/* for medium device */
+@media screen and (max-width: 768px) {
+   
+    .work__container{
+        grid-template-columns: max-content;
+    }
+
+      .services__modal-contentx {
+        width: 80%;
+        max-height: 60vh; /* Limits modal height */
+        display: flex;
+        flex-direction: column; /* To manage content and button layout */
+        position: relative;
+        transform: translateY(-20%);
+    }
+
+    /* Content inside modal */
+    .modal__body {
+        flex-grow: 1; /* Allows the body to take up remaining space */
+        overflow-y: auto; /* Enables scrolling of the content inside the modal */
+        padding: 1.5rem; /* Adds padding around content */
+    }
+
+    .button__container {
+        position: sticky; /* Stick the button container to the bottom */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        /* background-color: var(--container-color);
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);  Adds shadow for separation  */
+        z-index: 1001; /* Ensures the buttons stay on top */
+    }
+    
+    .work__button, .work__button2 {
+        width: 45%; /* Mengurangi lebar tombol untuk menyesuaikan posisi di mobile */
+        font-size: var(--smaller-font-size);
+        font-weight: var(--font-medium);
+
+    }
+    
+ 
+}
+
+@media screen and (max-width: 576px) {
+    .work__container{
+        grid-template-columns: 1fr;
+    }
+
+    .work__img{
+        width: 100%;
+    }
+    
+    /* perubahan button */
+    .services__modal-contentx{
+        /* width: 95%;  Makes modal almost full-screen on mobile 
+        max-height: 60vh;  Allows scrolling inside the modal 
+        overflow-y: auto;  Enables scrolling inside the modal 
+        padding-bottom: 100px; */
+
+        width: 95%;
+        max-height: 60vh; /* Limits modal height */
+        display: flex;
+        flex-direction: column; /* To manage content and button layout */
+        position: relative;
+        transform: translateY(-10%);
+        
+    }
+
+    .modal__body {
+        flex-grow: 1; /* Allows the body to take up remaining space */
+        overflow-y: auto; /* Enables scrolling of the content inside the modal */
+        padding: 1.5rem; /* Adds padding around content */
+    }
+
+    .button__container {
+        /* position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: var(--container-color);
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); Tambahkan bayangan untuk pemisahan visual  */
+
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        /* padding: 10px; */
+        /* background-color: var(--container-color); */
+        /* box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); Menambahkan bayangan  */
+        z-index: 1001; /* Ensures the buttons stay on top */
+    }
+
+    .work__button, .work__button2 {
+        width: 45%; /* Mengurangi lebar tombol untuk menyesuaikan posisi di mobile */
+        font-size: var(--smaller-font-size);
+        font-weight: var(--font-medium);
+
+    }
+    
+
+    
+}
+
+@media screen and (max-width: 350px) {
+    .services__modal-contentx {
+        transform: translateY(-1000%);
+      }
+  
+    .services__modal-title {
+      font-size: var(--small-font-size); /* Memperkecil ukuran font judul modal */
+    }
+  
+    .services__modal-description {
+      font-size: var(--smaller-font-size); /* Memperkecil deskripsi modal */
+    }
+  
+    /* Menyesuaikan ukuran programming logo */
+    .services__modal-info2 {
+      font-size: var(--tiny-font-size); /* Memperkecil teks info programming */
+      margin-top: var(--mb-0-5); /* Mengurangi margin untuk kesesuaian layout */
+    }
+  
+    .services__modal-content img {
+      width: 40px; /* Memperkecil logo programming */
+      height: 40px; /* Memperkecil logo programming */
+    }
+  
+    /* Tombol */
+    .work__button, .work__button2 {
+      font-size: var(--smaller-font-size); /* Memperkecil ukuran font tombol */
+      padding: 10px 20px; /* Sesuaikan padding untuk ukuran tombol */
+      width: 170px; /* Mengurangi lebar tombol */
+    }
+  
+    .work__button-icon, .work__button-icon2 {
+      font-size: var(--smaller-font-size); /* Memperkecil ikon panah */
+    }
+  
+    /* Menyusun chip agar tidak melewati modal */
+    .Chip {
+      white-space: normal; /* Membuat chip bisa break line jika terlalu panjang */
+      margin-bottom: 8px; /* Menambahkan jarak antar chip untuk tumpukan */
+    }
+  
+    .MuiStack-root {
+      flex-wrap: wrap; /* Membuat chip ke bawah jika tidak muat satu baris */
+      gap: 10px; /* Jarak antar chip */
+    }
+  
+    /* Modal close icon */
+    .services__modal-close {
+      font-size: 1.2rem; /* Sesuaikan ukuran ikon tutup modal */
+    }
+  }
+  

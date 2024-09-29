@@ -150,8 +150,7 @@ export const projectsData = [
         category: 'data viz',
         description: 'Information Visualization | 5th Semester',
         services:[
-            'Analysis PT. Karyakartun (Information Visualization) PT. Karyakartun has been established engaged in the business sector in the office supplies, furniture and technology product section. PT. Karyakartun has a problem, the transactions used are still manual.  This makes PT. Karyakartun has problem in analyzing the sales. Besides that, PT. Karyakartun also has difficulties in assessing employee, performance, products sold and customer loyalty.',
-            'In this project, i created a dashboard to represent the result of the analysis to answer problems at PT.Karyakartun. Before creating a dashboard, the data cleaning stage is carried out. This project contains dashboard using Tableau and cleaning data and join data using Tableau Prep Builder '
+            'PT. Karyakartun operates in the office supplies, furniture, and technology products sector. However, the company faces challenges due to manual transaction processes, which complicates sales analysis. Additionally, PT. Karyakartun struggles with evaluating employee performance, product sales, and customer loyalty.In this project, I developed a dashboard to address these issues by providing clear analysis results. Before creating the dashboard, I conducted data cleaning and integration using Tableau Prep Builder. The final dashboard was built in Tableau to visualize and solve the company’s key challenges.'
         ],
         tools:'Tableau, Tableau Prep Builder',
         download:'https://drive.google.com/file/d/1UJ2aDCEI64Ueryj2jE_lkWSgtPIjqtgr/view?usp=sharing'

@@ -26,8 +26,9 @@ export default WorksItems
 
 const WorkModal = ({ item, onClose }) => {
   return (
-    <div className="services__modal active-modal">
-      <div className="services__modal-content">
+    <div className="services__modal-work active-modal">
+      <div className="services__modal-contentx">
+        <div className="modal__body">
         <i onClick={onClose} className='uil uil-times services__modal-close'></i>
         <h3 className='services__modal-title'>{item.title}</h3>
         <p className="services__modal-description">
@@ -43,7 +44,7 @@ const WorkModal = ({ item, onClose }) => {
         <p className='services__modal-info'>Tools:</p>
         <Stack direction="row" spacing={1}>
           {item.tools.split(',').map((tool, index) => (
-            <Chip key={index} label={tool.trim()} style={{ backgroundColor: toolColors[tool.trim()] || '#e0e0e0', color: '#ffffff' }} />
+            <Chip key={index} className='Chip' label={tool.trim()} style={{ backgroundColor: toolColors[tool.trim()] || '#e0e0e0', color: '#ffffff' }} />
           ))}
         </Stack>
 
@@ -59,6 +60,7 @@ const WorkModal = ({ item, onClose }) => {
             </Stack>
           </>
         )}
+        </div>
 
         <div className="button__container">
           {item.view && <a href={item.view} className="work__button">

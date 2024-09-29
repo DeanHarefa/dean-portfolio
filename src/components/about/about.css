@@ -53,6 +53,13 @@
 
 /* Breakpoint */
 /* for large device */
+@media screen and (max-width: 1024px) {
+    .about__modal-content {
+        transform: translateY(-40%);
+    }
+    
+  }
+
 @media screen and (max-width: 992px) {
     .about__container{
         grid-template-columns: 2fr;
@@ -91,6 +98,10 @@
 
     .about__description{
         padding: 0;
+    }
+
+    .about__modal-content {
+        transform: translateY(0%);
     }
   }
   

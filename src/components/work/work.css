@@ -186,7 +186,7 @@
 /* Modal styles for smaller screens */
 /* Breakpoint */
 /* for large device */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
     .services__modal-contentx {
         width: 80%;
         max-height: 60vh; /* Limits modal height */

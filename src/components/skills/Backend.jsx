@@ -25,14 +25,14 @@ const Backend = () => {
                     <div className="skills__data">
                         <i class="bx bx-badge-check"></i>
                         <div>
-                            <h3 className='skills__name'>Javascript</h3>
+                            <h3 className='skills__name'>Defect Tracking & Management</h3>
                         </div>
                     </div>
 
                     <div className="skills__data">
                         <i class="bx bx-badge-check"></i>
                         <div>
-                            <h3 className='skills__name'>HTML & CSS</h3>
+                            <h3 className='skills__name'>Design Interface</h3>
                         </div>
                     </div>
 
@@ -76,7 +76,7 @@ const Backend = () => {
                     <div className="skills__data">
                         <i class="bx bx-badge-check"></i>
                         <div>
-                            <h3 className='skills__name'>Design Interface</h3>
+                            <h3 className='skills__name'>API Testing</h3>
                         </div>
                     </div>
                 </div>

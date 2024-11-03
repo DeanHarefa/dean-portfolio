@@ -11,15 +11,7 @@ const Tools = () => {
                 <div className="skills__data">
                     <i class="bx bx-badge-check"></i>
                     <div>
-                        <h3 className='skills__name'>Figma</h3>
-                       
-                    </div>
-                </div>
-
-                <div className="skills__data">
-                    <i class="bx bx-badge-check"></i>
-                    <div>
-                        <h3 className='skills__name'>Tableau</h3>
+                        <h3 className='skills__name'>Katalon Studio</h3>
                       
                     </div>
                 </div>
@@ -50,10 +42,10 @@ const Tools = () => {
               
             </div>
             <div className="skills__group">
-                <div className="skills__data">
+            <div className="skills__data">
                     <i class="bx bx-badge-check"></i>
                     <div>
-                        <h3 className='skills__name'>Katalon Studio</h3>
+                        <h3 className='skills__name'>Microsoft Excel</h3>
                     </div>
                 </div>
 
@@ -64,17 +56,19 @@ const Tools = () => {
                     </div>
                 </div>
 
-                <div className="skills__data">
-                    <i class="bx bx-badge-check"></i>
-                    <div>
-                        <h3 className='skills__name'>Microsoft Excel</h3>
-                    </div>
-                </div>
                 
                 <div className="skills__data">
                     <i class="bx bx-badge-check"></i>
                     <div>
-                        <h3 className='skills__name'>Tableau Prep Builder</h3>
+                        <h3 className='skills__name'>Tableau</h3>
+                    </div>
+                </div>
+
+                <div className="skills__data">
+                    <i class="bx bx-badge-check"></i>
+                    <div>
+                        <h3 className='skills__name'>Figma</h3>
+                       
                     </div>
                 </div>
             </div>

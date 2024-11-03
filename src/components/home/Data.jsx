@@ -55,9 +55,13 @@ const Data = () => {
                 </svg>
             </h1>
             <h3 className='home__subtitle'>Computer Science</h3>
-            <p className='home__description'>
+            {/* <p className='home__description'>
                 I'm fresh graduate Bina Nusantara University and ex front end developer at Ciputra Group, Jakarta. I have interest in Quality Assurance, Quality Control, Software Testing and System Analyst.
+            </p> */}
+            <p className='home__description'>
+            I am a recent Computer Science graduate from Bina Nusantara University with hands-on experience in front-end development at Ciputra Group and Quality Assurance at Bank Mandiri. 
             </p>
+            
             <a href="#contact" className="button button--flex">
                 Say Hello
                 <svg

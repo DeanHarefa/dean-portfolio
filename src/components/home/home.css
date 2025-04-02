@@ -22,13 +22,41 @@
 }
 
 .home__social-icon:hover{
-    color: var(--title-color-dark);
+    /* color: var(--title-color-dark); */
+    color: black;
+}
+
+.dark-mode .home__social-icon:hover{
+    /* color: var(--title-color-dark); */
+    color: #b3b3b3;
 }
 
 .home__title{
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-0-25);
 }
+
+/* Dark Mode */
+/* .dark-mode .home__title {
+    color: #ffffff; 
+    Warna teks berubah menjadi putih saat dark mode
+} */
+
+/* .dark-mode .home__subtitle{
+    color: #ffffff;
+} */
+
+/* .dark-mode .home__scroll-name{
+    color: #ffffff;
+} */
+
+/* .dark-mode .home__scroll-arrow {
+    color: #ffffff;
+}
+
+.dark-mode .home__scroll-button {
+    color: #ffffff;
+} */
 
 .home__hand{
     width: 38px;
@@ -191,7 +219,7 @@
 
     .home__hand{
         width: 22px;
-        heigh: 22px;
+        height: 22px;
     }
     
   }

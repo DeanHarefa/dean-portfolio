@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./header.css"
 
 const Header = () => {
@@ -13,6 +13,16 @@ const Header = () => {
     // Toogle Menu
     const [Toggle, showMenu] = useState(false);
     const [activeNav, setActiveNav] = useState("#home")
+
+     // Dark Mode State
+     const [darkMode, setDarkMode] = useState(() => {
+        return localStorage.getItem("darkMode") === "true";
+    });
+
+    useEffect(() => {
+        document.body.classList.toggle("dark-mode", darkMode);
+        localStorage.setItem("darkMode", darkMode);
+    }, [darkMode]);
   return (
     <header className="header">
         <nav className="nav container">
@@ -68,6 +78,11 @@ const Header = () => {
                 <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
                     <i className="uil uil-apps"></i>
                 </div>
+
+                {/* Dark Mode Toggle */}
+                <button className="dark-mode-toggle" onClick={() => setDarkMode(!darkMode)}>
+                    {darkMode ? "☀️" : "🌙"}
+                </button>
         </nav>
     </header>
   )

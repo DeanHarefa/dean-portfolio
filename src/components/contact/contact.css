@@ -98,6 +98,22 @@
     z-index: 10;
 }
 
+/* Dark */
+.dark-mode .contact__form-tag{
+    background-color: white;
+    color: black;
+}
+
+.dark-mode .contact__form-input{
+    border: 2px solid white;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    input::placeholder, textarea::placeholder {
+        color: white;
+    }
+} */
+
 .contact__form-area{
     height: 11rem;
 }
@@ -147,3 +163,18 @@
   
   }
   
+
+
+
+.button:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.dark-mode .button:hover {
+    background-color: #b3b3b3;
+    transform: scale(1.05);
+}
+
+
+

@@ -19,7 +19,12 @@
 }
 
 .about__box:hover{
+    /* background-color: var(--body-color); */
     background-color: var(--body-color);
+}
+
+.dark-mode .about__box:hover {
+    background-color: #b3b3b3;
 }
 
 .about__box{

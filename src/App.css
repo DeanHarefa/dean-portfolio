@@ -4,6 +4,8 @@
 /* Variable CSS */
 :root {
   --header-height: 3rem;
+  --title-color: #000000; /* Warna default (Light Mode) */
+  --title-color-dark: #ffffff; /* Warna saat Dark Mode */
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -94,7 +96,9 @@
 --z-modal: 1000;
 }
 
-
+.dark-mode {
+  --title-color: var(--title-color-dark);
+}
 
 /* responsive typography */
 @media screen and (max-width: 992px){

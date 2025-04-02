@@ -14,7 +14,7 @@ import QABootcamp from "../../assets/Coding.id.png"
 import CSSLogo from "../../assets/Bahasa Pemograman/CSS Logo.png"
 import HTMLLogo from "../../assets/Bahasa Pemograman/HTML Logo.png"
 import ReactLogo from "../../assets/Bahasa Pemograman/React Logo.png"
-import TSLogo from "../../assets/Bahasa Pemograman/TypeScript Logo.png"
+import GrovvyLogo from "../../assets/Bahasa Pemograman/Groovy Logo.png"
 import JSLogo from "../../assets/Bahasa Pemograman/JS Logo.png"
 import MUILogo from "../../assets/Bahasa Pemograman/MUI Logo.png"
 import MYSQLLogo from "../../assets/Bahasa Pemograman/MySQL Logo.png"
@@ -31,7 +31,7 @@ export const projectsData = [
            
         ],
         tools: 'Katalon Studio, Spreadsheet, Android Studio ',
-        programmingLogos: [TSLogo],
+        programmingLogos: [GrovvyLogo],
         view: 'https://drive.google.com/drive/folders/1tKQG9KWhxX203aYlZCoVqcLkapSjHt_8?usp=sharing',
         download:'https://github.com/DeanHarefa/Automation.git'
     

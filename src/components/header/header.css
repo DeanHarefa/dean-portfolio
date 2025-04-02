@@ -1,4 +1,19 @@
-.header{
+:root {
+    --title-color: #222; /* Warna gelap untuk light mode */
+    --title-color-dark: #ffffff; /* Warna putih untuk dark mode */
+    --home-title-color: #ffffff; /* Warna putih untuk judul Home */
+  }
+  
+  /* Mode gelap */
+  .dark-mode {
+    --title-color: #ffffff;
+  }
+
+  .home__scroll-svg {
+    color: var(--title-color); /* Mengikuti perubahan warna teks */
+  }
+  
+  .header{
     width: 100%;
     position: fixed;
     top: 0;
@@ -25,6 +40,10 @@
     column-gap: 2rem;
 }
 
+.nav__icon, .nav__close, .nav__toggle{
+    display: none;
+}
+
 .nav__link{
     display: flex;
     flex-direction: column;
@@ -35,20 +54,60 @@
     transition: .3s;
 }
 
-.nav__icon, .nav__close, .nav__toggle{
-    display: none;
+.dark-mode .nav__link:hover{
+    color: #b3b3b3;
 }
-
 /* Active link */
 .active-link, .nav__link:hover{
-    color: var(--title-color-dark);
-    /* color: yellow; */
+    color: black;
 }
+
+.dark-mode .active-link, .nav__link:hover{
+    color: #b3b3b3;
+}
+
+
 
 /* Change Background header */
 .scroll-header{
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .header {
+    background-color: #222;
+}
+
+.dark-mode .nav__link {
+    color: #ffffff;
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit;
+    margin-left: 1rem;
+}
+
+/* Warna khusus untuk Home */
+/* Mengikuti warna teks utama */
+/* .nav__link[href="#home"] {
+    color: var(--title-color); 
+} */
+
+/* Saat dalam mode gelap, pastikan warna tetap putih */
+/* .dark-mode .nav__link[href="#home"] {
+    color: var(--title-color-dark);
+} */
+
+
+
 
 /* Breakpoint */
 /* for medium device */
@@ -74,6 +133,12 @@
         transition: .3s;
     }
 
+    .dark-mode .nav__menu{
+       
+        background-color: black;
+        
+    }
+
     /* Show Menu */
     .show-menu{
         bottom: 0;
@@ -95,6 +160,7 @@
         bottom: .5rem;
         font-size: 1.5rem;
         cursor: pointer;
+        /* color: var(--title-color); */
         color: var(--title-color);
     }
 

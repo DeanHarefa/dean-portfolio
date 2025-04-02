@@ -17,7 +17,11 @@
 }
 
 .footer__link:hover{
-    color: var(--title-color-dark);
+    color: black;
+}
+
+.dark-mode .footer__link:hover{
+    color: #b3b3b3;
 }
 
 .footer__list{
@@ -42,9 +46,9 @@
     display: inline-flex;
 }
 
-.footer__social-link:hover{
+/* .footer__social-link:hover{
     background-color: var(--title-color-dark);
-}
+} */
 
 .footer__copy{
     display: block;
@@ -65,4 +69,34 @@
   }
   
  
-  
+/* Tambahkan ke dalam dark mode */
+.dark-mode {
+    --container-color: #222; /* Warna lebih gelap untuk footer */
+    --text-color: #ffffff;
+}
+
+.dark-mode .footer {
+    background-color: var(--container-color);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .footer__title,
+.dark-mode .footer__link,
+.dark-mode .footer__copy {
+    color: var(--text-color);
+}
+
+.dark-mode .footer__social-link {
+    background-color: var(--text-color);
+    color: var(--container-color);
+}
+
+.dark-mode .footer__social-link:hover {
+    /* background-color: var(--title-color-dark); */
+    background-color: #b3b3b3;
+}
+
+ .footer__social-link:hover {
+    /* background-color: var(--title-color-dark); */
+    background-color: black
+}
